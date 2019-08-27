@@ -1,6 +1,6 @@
 ### Red-black tree
 
-> @2019-08-27
+> @2019-08-27 - https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
 
 A red-black tree is a kind of self-balancing binary search tree in computer science.
 
