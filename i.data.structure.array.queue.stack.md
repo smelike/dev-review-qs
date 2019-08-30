@@ -82,12 +82,12 @@ public class ArrayQueue {
 如下图例说明，当 a、b、c、d 依次入列之后，队列中的 head 指针指向下标为 0 的位置，tail 指针指向下标为 4 的位置。
 
 
-![queue-exm](./images/queue-exm.png)
+![queue-exm](./images/queue-exm.jpg)
 
 
 当调用两次出队操作之后，队列中 head 指针指向下标为 2 的位置，tail 指针仍然指向下标为 4 的位置。
 
-![queue-exm](./images/dequeue-exm.png)
+![queue-exm](./images/dequeue-exm.jpg)
 
 **随着不停地进行入队、出队操作**，head 和 tail 都会持续往后移动。
 
@@ -268,6 +268,6 @@ public class CircularQueue {
 实际上，基于数组的循环队列，利用 CAS 原子操作，可以实现非常高效的并发队列。这也是循环队列比链式队列应用更佳广泛的原因。
 
 
-> [CAS-REFERENCE-INFO](./ref/cas.html)
+> [CAS-REFERENCE-INFO](/ref/cas.html)
 
 
