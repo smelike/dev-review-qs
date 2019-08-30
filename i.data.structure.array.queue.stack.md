@@ -267,9 +267,7 @@ public class CircularQueue {
 
 实际上，基于数组的循环队列，利用 CAS 原子操作，可以实现非常高效的并发队列。这也是循环队列比链式队列应用更佳广泛的原因。
 
-> (CAS, Compare And Set, https://zh.wikipedia.org/wiki/%E6%AF%94%E8%BE%83%E5%B9%B6%E4%BA%A4%E6%8D%A2)
 
-
-
+> [CAS-REFERENCE-INFO](./ref/cas.html)
 
 
