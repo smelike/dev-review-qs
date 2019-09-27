@@ -20,6 +20,8 @@ https://vuejs.org/v2/guide/events.html
 > 如：@click.stop="closeChannel(key)"
 
 
+v-on:click.stop="doThis" 的意思是就是 doThis 之后，就停止单击事件继续传播。
+
 ----
 
 实例代码：
