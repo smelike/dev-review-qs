@@ -15,8 +15,33 @@ https://vuejs.org/v2/guide/events.html
 
 ----
 
-在容器内部的元素中，添加 v-on:click.stop="doThis".
+在容器内部的元素中，直接使用 v-on:click.stop="doThis".
 
+> 如：@click.stop="closeChannel(key)"
+
+
+----
+
+实例代码：
+
+```
+ <ul class="chat-list">
+  <li
+	v-for="(item, key) in chatGroupList"
+	:key="key"
+	:class="{active: key === selectedChannel }"
+	@click.stop="showChannel(key)">
+	<a href="javascript:">
+	  <span class="el-icon-chat-dot-round channel-icon"></span>
+	  <span>{{ item.name }}</span>
+	  <span
+	  v-if="key > 0"
+	  class="close-icon el-icon-close"
+	  @click.stop="closeChannel(key)"></span>
+	</a>
+  </li>
+</ul>
+```
 
 @20190926
 	
