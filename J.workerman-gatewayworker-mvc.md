@@ -40,6 +40,11 @@ PHP-MVC-Frameworker +  Workerman/GatewayWorker
 
 
 
+----
+
+## websocket
+
+https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/onerror
 
 
 
