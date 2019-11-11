@@ -38,7 +38,7 @@
 
 ## B-Perspective: 
 
-> 角度，仅仅选择了`存在 frequency `的情况，进行判断处理
+角度，仅仅选择了`存在 frequency `的情况，进行判断处理
 
 ```
 if (isset($this->conf['frequency']) && ($this->conf['frequency'] != '')) { 
