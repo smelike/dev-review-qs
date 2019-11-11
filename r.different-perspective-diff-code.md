@@ -36,7 +36,7 @@
 
 ----
 
-B-Perspective: 
+## B-Perspective: 
 
 > 角度，仅仅选择了存在 frequency 的情况，进行判断处理
 
