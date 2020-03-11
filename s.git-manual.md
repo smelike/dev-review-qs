@@ -1,6 +1,7 @@
 
 # git 的用法
 
+----
 
 ### 在错误的分支进行了工作，如何实现将工作合并到正确的分支呢
 
@@ -13,6 +14,7 @@
 第二步：git checkout 至到 feature-office 分支；
 
 
+----
 
 ### 删除分支
 
@@ -25,3 +27,13 @@ Deleted branch feature-office (was ab1a91c).
 ```
 
 强制删除分支：git branch -D feature-office
+
+----
+
+### 文件比对
+
+git diff  /path/to/file
+
+
+
+
