@@ -1,0 +1,42 @@
+./configure --prefix=/usr/local/php --with-config-file-path=/usr/local/php --enable-mbstring --with-openssl --enable-ftp --with-gd --with-jpeg-dir=/usr --with-png-dir=/usr --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-pear --enable-sockets --with-freetype-dir=/usr --with-zlib --with-libxml-dir=/usr --with-xmlrpc --enable-zip --enable-fpm --enable-xml --enable-sockets --with-gd --with-zlib --with-iconv --enable-zip --with-freetype-dir=/usr/lib/ --enable-soap --enable-pcntl --enable-cli --with-curl
+
+
+
+> configure: error: Please reinstall the libzip distribution
+
+> cmake 
+
+
+mkdir build
+cd build
+cmake ..
+make
+make test
+make install
+
+
+/usr/share/cmake3/completions
+
+centos /bin/sh: cmake: command not found
+
+----
+
+
+### ./configure 报错
+
+> configure: error: off_t undefined; check your library configuration
+
+
+# 添加搜索路径到配置文件
+echo '/usr/local/lib64
+/usr/local/lib
+/usr/lib
+/usr/lib64' >> /etc/ld.so.conf
+
+# 更新配置
+ldconfig -v
+
+----
+
+include=@php_fpm_sysconfdir@/php-fpm.d/*.conf
+
